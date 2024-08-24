@@ -1,7 +1,5 @@
 import React from "react";
-import { TypeAnimation } from 'react-type-animation';
-
-
+import { TypeAnimation } from "react-type-animation";
 
 const hero_content = {
   top_title: "Digitalize Your Product",
@@ -16,17 +14,25 @@ const hero_content = {
     </>
   ),
   total_review: "1500",
-  hero_img: "/assets/img/hero/hero-1.png",
+  // hero_img: "/assets/img/hero/hero-1.png",
+  // hero_img: "/assets/img/hero/t2.png",
+  // hero_img: "/assets/img/hero/t4.jpg",
+  hero_img: "/assets/img/hero/t5s.svg",
   hero_pie_img: "/assets/img/hero/hero-pie-chart.png",
   hero_docu_img: "/assets/img/hero/hero-chart.png",
 };
 
-const {sub_title, top_title, title, total_review , hero_img, hero_pie_img , hero_docu_img }  = hero_content
-
+const {
+  sub_title,
+  top_title,
+  title,
+  total_review,
+  hero_img,
+  hero_pie_img,
+  hero_docu_img,
+} = hero_content;
 
 const HeroBusiness = () => {
-
-
   return (
     <>
       <div className="tp-hero-business theme-bg fix pt-20">
@@ -45,30 +51,31 @@ const HeroBusiness = () => {
                   >
                     <span>{title}</span>
                     <span className="cd-words-wrapper">
-
-                    <TypeAnimation
-                          sequence={[
-                            'Web Development', 
-                            2000,
-                            '360 Branding', 
-                            3000,
-                            'App Development', 
-                            4000,
-                            "SEO",
-                            5000,
-                            "Social Media Marketing"
-                          ]}
-                          wrapper="div"
-                          cursor={false}
-                          repeat={Infinity}
-                          style={{ color: "#ff3c58", textDecorationLine: "underline" }}
-                        />
-
+                      <TypeAnimation
+                        sequence={[
+                          "Web Development",
+                          2000,
+                          "360 Branding",
+                          3000,
+                          "App Development",
+                          4000,
+                          "SEO",
+                          5000,
+                          "Social Media Marketing",
+                        ]}
+                        wrapper="div"
+                        cursor={false}
+                        repeat={Infinity}
+                        style={{
+                          color: "#ff3c58",
+                          textDecorationLine: "underline",
+                        }}
+                      />
                     </span>
                   </h3>
                 </div>
                 <p className="mb-40 wow tpfadeUp" data-wow-delay=".4s">
-                   {sub_title}
+                  {sub_title}
                 </p>
               </div>
               <div className="bs-hero__subscribe mr-40 mb-30">

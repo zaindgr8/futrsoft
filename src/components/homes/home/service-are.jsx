@@ -1,39 +1,72 @@
 import Link from "next/link";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBullhorn,
+  faPencilRuler,
+  faLaptopCode,
+  faBriefcase,
+  faFileInvoice,
+} from "@fortawesome/free-solid-svg-icons";
 
 // service data
 const service_data = [
   {
     id: 1,
-    icon: "assets/img/services/icon/service-icon-1.png",
+    icon: (
+      <FontAwesomeIcon
+        icon={faBullhorn}
+        style={{ color: "black", fontSize: "2em" }}
+      />
+    ),
     naem: "Digital Marketing",
     link: "service",
     delay: ".3s",
   },
   {
     id: 2,
-    icon: "assets/img/services/icon/service-icon-2.png",
+    icon: (
+      <FontAwesomeIcon
+        icon={faPencilRuler}
+        style={{ color: "black", fontSize: "2em" }}
+      />
+    ),
     naem: "UI & UX Design",
     link: "service-3",
     delay: ".4s",
   },
   {
     id: 3,
-    icon: "assets/img/services/icon/service-icon-3.png",
+    icon: (
+      <FontAwesomeIcon
+        icon={faLaptopCode}
+        style={{ color: "black", fontSize: "2em" }}
+      />
+    ),
     naem: "Web/ App Development",
     link: "service-2",
     delay: ".6s",
   },
   {
     id: 4,
-    icon: "assets/img/services/icon/service-icon-4.png",
+    icon: (
+      <FontAwesomeIcon
+        icon={faBriefcase}
+        style={{ color: "black", fontSize: "2em" }}
+      />
+    ),
     naem: "360 Branding",
     link: "service",
     delay: ".3s",
   },
   {
     id: 5,
-    icon: "assets/img/services/icon/service-icon-5.png",
+    icon: (
+      <FontAwesomeIcon
+        icon={faFileInvoice}
+        style={{ color: "black", fontSize: "2em" }}
+      />
+    ),
     naem: "Medical Billing",
     link: "contact",
     delay: ".3s",
@@ -44,13 +77,13 @@ const service_content = {
   name: "Services",
   title: (
     <>
-
-      Driving Your Success <br/> with Expert Solutions 
+      Driving Your Success <br /> with Expert Solutions
     </>
   ),
 };
 
-const {name, title}  = service_content
+const { name, title } = service_content;
+
 const ServiceAre = () => {
   return (
     <>
@@ -71,7 +104,7 @@ const ServiceAre = () => {
                     className="tp-section__title mb-30 wow tpfadeUp"
                     data-wow-delay=".5s"
                   >
-                   {title}
+                    {title}
                   </h2>
                 </div>
               </div>
@@ -87,11 +120,9 @@ const ServiceAre = () => {
                   data-wow-delay={item.delay}
                 >
                   <div className="tp-bs-service-box text-center pt-40 pb-40 mb-25">
-                    <div className="tp-bs-sv-icon mb-25">
-                      <img src={item.icon} alt="" />
-                    </div>
+                    <div className="tp-bs-sv-icon mb-25">{item.icon}</div>
                     <h3 className="tp-bs-sv-title">
-                      <Link href={item.link}> {item.naem}</Link>
+                      <Link href={item.link}>{item.naem}</Link>
                     </h3>
                   </div>
                 </div>

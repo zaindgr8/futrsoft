@@ -1,28 +1,29 @@
 import Link from "next/link";
 import React from "react";
 
-// about_content data 
+// about_content data
 const about_content = {
   sub_title: "Since From 2020",
   title: "Innovating Your Digital Future",
   des: (
     <>
-    We empower our
-      clients to thrive in the digital landscape, offering expertise in
-      everything from SEO and social media management to custom software
-      development. Discover the difference with Futrsoft—where your vision meets
-      our innovation.
+      We empower our clients to thrive in the digital landscape, offering
+      expertise in everything from SEO and social media management to custom
+      software development. Discover the difference with Futrsoft—where your
+      vision meets our innovation.
     </>
   ),
-  about_img1: "/assets/img/about/tp-bs-img.jpg",
-  about_img2: "/assets/img/about/tp-bs-img-sm-top.jpg",
-  about_img3: "/assets/img/about/tp-bs-circle.png",
+  // about_img1: "/assets/img/about/tp-bs-img.jpg",
+  about_img1: "/assets/img/about/t2.png",
+  // about_img2: "/assets/img/about/t4.png",
+  // // about_img2: "/assets/img/about/tp-bs-img-sm-top.jpg",
+  // about_img3: "/assets/img/about/tp-bs-circle.png",
 };
 
 const { title, des, about_img1, about_img2, about_img3, sub_title } =
   about_content;
 
-  // features data
+// features data
 const features = [
   {
     title: "Tailored Solutions",
@@ -62,10 +63,10 @@ const AboutArea = () => {
                   data-tilt=""
                   data-tilt-perspective="2000"
                 >
-                  <img src={about_img2} alt="" />
+                  {/* <img src={about_img2} alt="" /> */}
                 </div>
                 <div className="tp-bs-sm-button">
-                  <img src="/assets/img/about/tp-bs-img-sm-button.jpg" alt="" />
+                  {/* <img src="/assets/img/about/tp-bs-img-sm-button.jpg" alt="" /> */}
                 </div>
                 <div className="tp-bs-bg-circle">
                   <img src={about_img3} alt="" />
@@ -78,7 +79,7 @@ const AboutArea = () => {
                   <div className="tp-section">
                     <span className="tp-section__subtitle white-bg mb-15">
                       <i className="before-border"></i>
-                      {sub_title}{" "}
+                      {sub_title}
                     </span>
                     <h2 className="tp-section__title mb-30"> {title}</h2>
                     <p>{des}</p>

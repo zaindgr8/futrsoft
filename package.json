@@ -9,8 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-regular-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@next/font": "13.1.6",
     "bootstrap": "^5.2.3",
+    "fontawesome-free": "^1.0.4",
     "framer-motion": "^10.1.0",
     "next": "13.1.6",
     "react": "18.2.0",

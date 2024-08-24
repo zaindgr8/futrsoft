@@ -8,11 +8,15 @@ import HeroBusiness from "./hero-business";
 import ProjectsArea from "./projects-area";
 import ServiceAre from "./service-are";
 import TestimonialArea from "./testimonial-area";
+import HeaderTwo from "@/src/layout/headers/header-2";
+import HeaderThree from "@/src/layout/headers/header-3";
 
 const HomeOne = () => {
   return (
     <>
       <Header style_home_one={true} />
+      {/* <HeaderTwo /> */}
+      {/* <HeaderThree /> */}
       <HeroBusiness />
       <AboutArea />
       {/* <Brand /> */}
